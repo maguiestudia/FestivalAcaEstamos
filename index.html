@@ -12,7 +12,7 @@
   --bg:#ffffff; --ink:#1f3a4f; --muted:#4d6373; --card:#ffffff; --line:rgba(31,58,79,.18);
   --d1:#e9f2dd; --d2:#fff4e0; --d3:#e3ece9;
   --serif:"Abril Fatface","Bodoni MT",Georgia,serif; --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px);
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#12222f; --ink:#f3f6f4; --muted:#b4c4cc; --card:#1a3142; --line:rgba(255,255,255,.18);
@@ -70,7 +70,7 @@ section.day:nth-of-type(1){background:var(--d1)}section.day:nth-of-type(2){backg
 .inst-sec h2{margin:0 0 28px;font:400 30px/1.05 var(--serif)}
 .inst-sec .inst .lg-1{fill:#fff}
 .inst{display:block;width:100%;max-width:460px;height:auto;margin:0 auto}
-footer{background:var(--navy);color:#fff;text-align:center;padding:26px 20px 34px;font-size:15px}
+footer{background:var(--navy);color:#fff;text-align:center;padding:26px 20px calc(34px + env(safe-area-inset-bottom,0px));font-size:15px}
 footer b{font-family:var(--serif);font-weight:400;font-size:20px;display:block;margin-bottom:4px}
 @media (min-width:700px){body{max-width:640px;margin:0 auto;box-shadow:0 0 0 1px var(--line)}}
 </style>
